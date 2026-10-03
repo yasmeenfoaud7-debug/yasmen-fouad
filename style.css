@@ -180,12 +180,11 @@ nav ul li a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    column-gap: 25px; 
-    row-gap: 45px;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .project-card {
@@ -193,9 +192,11 @@ nav ul li a:hover {
     border: 1px solid rgba(51, 65, 85, 0.4);
     border-radius: 15px;
     padding: 25px;
+    width: 320px;
     transition: 0.3s ease;
     overflow: hidden;
 }
+
  .project-card:hover {
     transform: translateY(-5px);
     border-color: #3b82f6;
